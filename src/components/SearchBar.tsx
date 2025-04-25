@@ -59,7 +59,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
 
       {isOpen && suggestions.length > 0 && (
         <div className="absolute z-10 w-full mt-1 bg-white rounded-lg shadow-lg border border-gray-200">
-          {suggestions.map((suggestion, index) => (
+          {suggestions.map((suggestion) => (
             <button
               key={suggestion}
               onClick={() => handleSuggestionClick(suggestion)}

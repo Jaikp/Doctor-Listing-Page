@@ -6,14 +6,6 @@ import DoctorCard from './components/DoctorCard';
 import { Doctor, FilterState } from './types/doctor';
 import { fetchDoctors } from './services/api';
 
-const initialFilters: FilterState = {
-  search: '',
-  consultationType: '',
-  specialities: [],
-  sortBy: '',
-  sortOrder: 'asc',
-};
-
 function App() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [doctors, setDoctors] = useState<Doctor[]>([]);
